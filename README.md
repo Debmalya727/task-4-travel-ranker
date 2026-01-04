@@ -37,37 +37,82 @@ python weekend_ranker.py
 🧪 Usage Example
 When you run the script, you will be prompted to enter your current city.
 
-Input:
+📊 SAMPLE CONSOLE OUTPUTS
 
-Plaintext
+The following outputs demonstrate the recommender system ranking destinations based on distance, rating, and popularity.
 
-Enter Source City: Delhi
-Output:
+```text
+--- Weekend Getaway Recommender ---
+Enter your source city (or type 'exit' to quit): Kolkata
 
-Plaintext
+Finding top weekend getaways from Kolkata...
+Processing recommendations for: Kolkata (22.5726, 88.3639)...
 
-✅ Top 5 Weekend Getaways from Delhi:
-
-1. 🏆 Rishikesh
-   - Rating: 4.8/5.0
-   - Distance: 240 km
-   - Score: 9.2/10
-
-2. 🥈 Jaipur
-   - Rating: 4.6/5.0
-   - Distance: 280 km
-   - Score: 8.9/10
+City                     Type        Distance_km  Google review rating  Score
+-------------------------------------------------------------------------------
+Deoghar                  Temple          272.5                  4.7     0.76
+Hooghly                  Temple           52.0                  4.6     0.74
+Sundarbans National Park  Wildlife         68.7                  4.4     0.71
+Bolpur                   Temple          139.0                  4.7     0.67
+Digha                    Beach           137.5                  4.5     0.67
 
 
-📂 Project Structure
-Plaintext
+--- Weekend Getaway Recommender ---
+Enter your source city (or type 'exit' to quit): Delhi
 
+Finding top weekend getaways from Delhi...
+Processing recommendations for: Delhi (28.6139, 77.2090)...
+
+City           Type                     Distance_km  Google review rating  Score
+----------------------------------------------------------------------------------
+Greater Noida  Mall, Race Track               34.0                  4.4     0.92
+Gurugram       Entertainment, Mall            24.1                  4.6     0.85
+Agra           Mausoleum, Fort               178.1                  4.6     0.76
+Vrindavan      Temple                        124.9                  4.8     0.74
+Meerut         Temple                         69.5                  4.8     0.73
+
+
+--- Weekend Getaway Recommender ---
+Enter your source city (or type 'exit' to quit): Varanasi
+
+Finding top weekend getaways from Varanasi...
+Processing recommendations for: Varanasi (25.3356, 83.0076)...
+
+City         Type                 Distance_km  Google review rating  Score
+----------------------------------------------------------------------------
+Patna        Zoo, Gurudwara           214.6                  4.5     0.73
+Aurangabad  Cave                     153.2                  4.6     0.68
+Allahabad   Confluence               118.5                  4.5     0.68
+Deoghar     Temple                   384.0                  4.7     0.67
+Lucknow     Monument, Mall            266.0                  4.5     0.66
+
+
+Enter your source city (or type 'exit' to quit): exit
+```
+
+
+
+
+📁 Project Structure
+```text
 task-4-travel-ranker/
 │
-├── weekend_ranker.py          # Main algorithm script
-├── Top Indian Places to Visit.csv # Dataset (Source Data)
-├── requirements.txt           # Python dependencies
-└── README.md                  # Documentation
+├── weekend_ranker.py
+│   └── Main Python script containing the recommendation algorithm
+│       for ranking weekend getaway destinations based on distance,
+│       rating, and popularity.
+│
+├── Top Indian Places to Visit.csv
+│   └── Source dataset containing Indian tourist destinations,
+│       location details, and Google review ratings.
+│
+├── requirements.txt
+│   └── List of Python dependencies required to run the project.
+│
+└── README.md
+    └── Project documentation submitted as part of the
+        Internship Technical Assessment 2025.
+```
 Submitted as part of the Internship Technical Assessment 2025.
 
 
@@ -75,4 +120,10 @@ Submitted as part of the Internship Technical Assessment 2025.
 If you haven't created the `requirements.txt` file for this folder yet, create it inside `task-4-travel-ranker` and add these two lines:
 
 pandas
+
 geopy
+
+
+
+
+
